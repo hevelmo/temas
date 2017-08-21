@@ -1,0 +1,150 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Mastermail Email Builder</title>
+    <meta name="description" content="">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="author" content="Mastermail"><!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" type="text/css" href="../demo/css/spectrum.css">
+    <link rel="stylesheet" href="../demo/css/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" href="../demo/css/styles.css" type="text/css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="../demo/js/jquery-ui.min.js"></script>
+    <script src="../demo/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://raw.githubusercontent.com/cowboy/jquery-resize/v1.1/jquery.ba-resize.min.js"></script>
+    <script src="../demo/js/jquery.modal.min.js"></script>
+    <script src="../demo/js/spectrum.js"></script>
+    <script src="../demo/js/jquery.spectrum-fi.js"></script>
+    <script src="http://cdn.ckeditor.com/4.4.2/full/ckeditor.js"></script>
+    <script src="../demo/ckeditor/adapters/jquery.js"></script>
+    
+    
+    
+    <script src="../notif20/js/main.js"></script>
+    
+    <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	../notif20/js/main.js    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <a href="templates/index.html"><img src="../demo/img/logo.png" alt=""></a>
+            </div>
+
+            <nav>
+    <div class="collapse-menu">
+	    <h3 class="nav-title last"> Change Colors</h3>
+	
+	    <div class="option-container">
+	       	
+	       	<div class="color clearfix">
+				<p class="fl">Text color : </p><input type="text" id="colorpicker2" />
+			</div>
+			
+			<div class="color clearfix">
+				<p class="fl">Link color : </p><input type="text" id="colorpicker4" />
+			</div>
+			
+			<div class="color clearfix">
+				<p class="fl">Footer text : </p><input type="text" id="colorpicker3" />
+			</div>
+			
+	    </div>
+    </div>
+	
+	<div class="action-buttons">
+		<a href="http://themastermail.com/alerta/1171804860/demo.zip" class="save-template">Save changes</a>
+		<a href="" class="purchase-template">Purchase</a>
+	</div>
+	
+</nav>            
+        </div>
+
+        <div class="main-content">
+            <div id="wrapper" class="clearfix">
+				
+				<div class="email-info clearfix">
+					<ul class="fl">
+						<li><a class="iphone-device" href=""><img src="../demo/img/iphone-icon.png" alt="iphone" /></a></li>
+						<li><a class="ipad-device" href=""><img src="../demo/img/ipad-icon.png" alt="ipad" /></a></li>
+						<li><a class="screen-device" href=""><img src="../demo/img/desktop-icon.png" alt="screen" /></a></li>
+					</ul>
+					<a href="" class="fr reset-change"><img src="../demo/img/reset.png" alt="reset changes"/></a>
+				</div>
+					
+				<div class="email-body">
+					
+					<div class="loading"><img src="../demo/img/loading.gif" /></div>
+					
+					<iframe scrolling="no" id="emailframe" src="../notif20/mc/index.html" width="800" name="myFrame"></iframe>
+				</div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<form id="download-form" action="core-download.php" method="post">
+	    <input type="hidden" class="html-code" name="html-code" value="" />
+	    <input type="hidden" name="number" value="20" />
+	</form>
+
+	<div class="clone" style="display: none;"></div>  
+	
+	
+	<div id="image-edit" style="display: none;">
+		<div class="close">
+			<p>Edit Image</p>
+			<a class="close-btn" href="" rel="modal:close">x</a>
+		</div>
+		
+		<div class="edit-container clearfix">
+			<div class="image-info fl">
+				<h2 class="first">Insert image Url</h2>
+				<input type="text" id="image_src"/>
+				<h2>Add link to image</h2>
+				<input type="text" id="image_link"/>
+			</div>
+			<div class="image-preview fr">
+				<img src="../demo/img/simple-preview.png" id="img_preview" alt="" />
+				<p>Optimal size : <span class="img_size"></span></p>
+			</div>
+		</div>
+		<div class="img-save">
+			<a href="" class="cancel" rel="modal:close">Cancel</a>
+			<a href="" class="save_img">Save Changes</a>
+		</div>
+	</div>
+	
+	<div id="text-edit" style="display: none;">
+		<div class="close">
+			<p>Edit Text</p>
+			<a class="close-btn" href="" rel="modal:close">x</a>
+		</div>
+		
+		<div class="edit-container">
+			<div class="text-info">
+				<textarea id="texteditor" class=""></textarea>
+			</div>
+		</div>
+		<div class="img-save">
+			<a href="" class="cancel" rel="modal:close">Cancel</a>
+			<a href="" class="save_text">Save Changes</a>
+		</div>
+	</div>
+	
+		
+</body>
+</html>
